@@ -10,3 +10,4 @@ This folder contains:
 3. Assets folder - with different files, including presentation.
 
 #### [Program of course](https://lms.ithillel.ua/groups/64e8915b120d1c4d470261b5/program)
+#### [Telegram](https://t.me/+yZHsUdBhmcNiZmUy)

@@ -56,14 +56,25 @@ const PascaleCase = 'ExampleTextValue'
  * function
  ****************************************/
 
-console.log('before')
-alert('Hello world')
-console.log('after')
+// console.log('before')
+// alert('Hello world')
+// console.log('after')
+//
+// const message = prompt('How old are you?', 0);
+// console.log(message);
+//
+// const result = confirm('Are you happy?');
+// console.log(result)
 
-const message = prompt('How old are you?', 0);
-console.log(message);
+/****************************************
+ * concatenation
+ ****************************************/
 
-const result = confirm('Are you happy?');
+const string1 = 'Hello'
+const string2 = 'World'
+
+const result = string1 + ' ' + string2 + '!'
+
 console.log(result)
 
 
