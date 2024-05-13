@@ -63,7 +63,6 @@
 //     console.log(localStorage[key])
 // }
 
-
 /****************************************
  * event
  ****************************************/
@@ -77,167 +76,180 @@
  ****************************************/
 
 const form = document.forms.form;
-const taskList = document.querySelector("[data-tasks]")
-const clearTasksBtn = document.querySelector("[data-clear-tasks]")
+const taskList = document.querySelector("[data-tasks]");
+const clearTasksBtn = document.querySelector("[data-clear-tasks]");
 
-let tasks = []
+let tasks = [];
 
-if (localStorage.getItem('tasks')) {
-    tasks = tasks.concat(JSON.parse(localStorage.getItem('tasks')))
+if (localStorage.getItem("tasks")) {
+  tasks = tasks.concat(JSON.parse(localStorage.getItem("tasks")));
 }
 
 function addTask(content) {
-    const li = document.createElement('li')
-    li.classList.add('list-group-item', 'd-flex',  'justify-content-between',  'align-items-center');
-    li.textContent = content;
+  const li = document.createElement("li");
+  li.classList.add(
+    "list-group-item",
+    "d-flex",
+    "justify-content-between",
+    "align-items-center",
+  );
+  li.textContent = content;
 
-    const removeBtn = document.createElement('span')
-    removeBtn.classList.add("delete-icon");
-    removeBtn.dataset.removeTask = ''
+  const removeBtn = document.createElement("span");
+  removeBtn.classList.add("delete-icon");
+  removeBtn.dataset.removeTask = "";
 
-    const icon = document.createElement('i');
-    icon.classList.add("bi", "bi-trash2-fill")
+  const icon = document.createElement("i");
+  icon.classList.add("bi", "bi-trash2-fill");
 
-    removeBtn.addEventListener('click', (e) => {
-        e.currentTarget.parentNode.remove()
-        tasks = tasks.filter(el => {
-            return el !== e.currentTarget.parentNode.textContent
-        })
+  removeBtn.addEventListener("click", (e) => {
+    e.currentTarget.parentNode.remove();
+    tasks = tasks.filter((el) => {
+      return el !== e.currentTarget.parentNode.textContent;
+    });
 
-        if (!tasks.length) {
-            clearTasksBtn.classList.add('d-none')
-        }
+    if (!tasks.length) {
+      clearTasksBtn.classList.add("d-none");
+    }
 
-        localStorage.setItem('tasks', JSON.stringify(tasks))
-    })
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  });
 
-    removeBtn.insertAdjacentElement('beforeend', icon)
-    li.insertAdjacentElement('beforeend', removeBtn)
-    taskList.insertAdjacentElement('beforeend', li)
+  removeBtn.insertAdjacentElement("beforeend", icon);
+  li.insertAdjacentElement("beforeend", removeBtn);
+  taskList.insertAdjacentElement("beforeend", li);
 }
 
 if (tasks.length) {
-    tasks.forEach( task => {
-        addTask(task)
-    })
-    clearTasksBtn.classList.remove('d-none')
+  tasks.forEach((task) => {
+    addTask(task);
+  });
+  clearTasksBtn.classList.remove("d-none");
 }
 
-form.elements.task.addEventListener('change', (e) => {
-    if (e.currentTarget.value) tasks.push(e.currentTarget.value)
-})
+form.elements.task.addEventListener("change", (e) => {
+  if (e.currentTarget.value) tasks.push(e.currentTarget.value);
+});
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    if (tasks.length) {
-        addTask(tasks[tasks.length - 1])
-        clearTasksBtn.classList.remove('d-none')
-        localStorage.setItem('tasks', JSON.stringify(tasks))
-    }
+  if (tasks.length) {
+    addTask(tasks[tasks.length - 1]);
+    clearTasksBtn.classList.remove("d-none");
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }
 
-    form.elements.task.value = ''
-})
+  form.elements.task.value = "";
+});
 
-clearTasksBtn.addEventListener('click', (e) => {
-    e.currentTarget.classList.add('d-none')
-    localStorage.clear()
-    tasks.length = 0;
-    while (taskList.firstChild) {
-        taskList.firstChild.remove()
-    }
-})
+clearTasksBtn.addEventListener("click", (e) => {
+  e.currentTarget.classList.add("d-none");
+  localStorage.clear();
+  tasks.length = 0;
+  while (taskList.firstChild) {
+    taskList.firstChild.remove();
+  }
+});
 
 /****************************************
  * Index DB
  ****************************************/
 
 class IndexedDBManager {
-    constructor(databaseName, storeName) {
-        this.databaseName = databaseName;
-        this.storeName = storeName;
-        this.db = null;
-    }
+  constructor(databaseName, storeName) {
+    this.databaseName = databaseName;
+    this.storeName = storeName;
+    this.db = null;
+  }
 
-    openDatabase() {
-        return new Promise((resolve, reject) => {
-            const request = indexedDB.open(this.databaseName, 1);
+  openDatabase() {
+    return new Promise((resolve, reject) => {
+      const request = indexedDB.open(this.databaseName, 1);
 
-            request.onerror = (event) => {
-                reject(`Error opening database: ${event.target.error}`);
-            };
+      request.onerror = (event) => {
+        reject(`Error opening database: ${event.target.error}`);
+      };
 
-            request.onsuccess = (event) => {
-                this.db = event.target.result;
-                resolve(this.db);
-            };
+      request.onsuccess = (event) => {
+        this.db = event.target.result;
+        resolve(this.db);
+      };
 
-            request.onupgradeneeded = (event) => {
-                this.db = event.target.result;
-                if (!this.db.objectStoreNames.contains(this.storeName)) {
-                    this.db.createObjectStore(this.storeName, { keyPath: 'id', autoIncrement: true });
-                }
-            };
-        });
-    }
-
-    closeDatabase() {
-        if (this.db) {
-            this.db.close();
-            this.db = null;
+      request.onupgradeneeded = (event) => {
+        this.db = event.target.result;
+        if (!this.db.objectStoreNames.contains(this.storeName)) {
+          this.db.createObjectStore(this.storeName, {
+            keyPath: "id",
+            autoIncrement: true,
+          });
         }
+      };
+    });
+  }
+
+  closeDatabase() {
+    if (this.db) {
+      this.db.close();
+      this.db = null;
     }
+  }
 
-    addObject(data) {
-        return new Promise((resolve, reject) => {
-            const transaction = this.db.transaction([this.storeName], 'readwrite');
-            const objectStore = transaction.objectStore(this.storeName);
-            const request = objectStore.add(data);
+  addObject(data) {
+    return new Promise((resolve, reject) => {
+      const transaction = this.db.transaction([this.storeName], "readwrite");
+      const objectStore = transaction.objectStore(this.storeName);
+      const request = objectStore.add(data);
 
-            request.onsuccess = (event) => {
-                resolve(event.target.result);
-            };
+      request.onsuccess = (event) => {
+        resolve(event.target.result);
+      };
 
-            request.onerror = (event) => {
-                reject(`Error adding object: ${event.target.error}`);
-            };
-        });
-    }
+      request.onerror = (event) => {
+        reject(`Error adding object: ${event.target.error}`);
+      };
+    });
+  }
 
-    getObjectById(id) {
-        return new Promise((resolve, reject) => {
-            const transaction = this.db.transaction([this.storeName], 'readonly');
-            const objectStore = transaction.objectStore(this.storeName);
-            const request = objectStore.get(id);
+  getObjectById(id) {
+    return new Promise((resolve, reject) => {
+      const transaction = this.db.transaction([this.storeName], "readonly");
+      const objectStore = transaction.objectStore(this.storeName);
+      const request = objectStore.get(id);
 
-            request.onsuccess = (event) => {
-                const result = event.target.result;
-                if (result) {
-                    resolve(result);
-                } else {
-                    reject(`Object with ID ${id} not found`);
-                }
-            };
+      request.onsuccess = (event) => {
+        const result = event.target.result;
+        if (result) {
+          resolve(result);
+        } else {
+          reject(`Object with ID ${id} not found`);
+        }
+      };
 
-            request.onerror = (event) => {
-                reject(`Error getting object: ${event.target.error}`);
-            };
-        });
-    }
+      request.onerror = (event) => {
+        reject(`Error getting object: ${event.target.error}`);
+      };
+    });
+  }
 }
 
 // Example usage:
-const dbManager = new IndexedDBManager('MyDatabase', 'MyObjectStore');
+const dbManager = new IndexedDBManager("MyDatabase", "MyObjectStore");
 
-dbManager.openDatabase().then(() => {
-    const data = { name: 'John Doe', age: 30 };
+dbManager
+  .openDatabase()
+  .then(() => {
+    const data = { name: "John Doe", age: 30 };
     return dbManager.addObject(data);
-}).then((objectId) => {
+  })
+  .then((objectId) => {
     console.log(`Object added with ID: ${objectId}`);
     return dbManager.getObjectById(objectId);
-}).then((retrievedObject) => {
-    console.log('Retrieved object:', retrievedObject);
+  })
+  .then((retrievedObject) => {
+    console.log("Retrieved object:", retrievedObject);
     dbManager.closeDatabase();
-}).catch((error) => {
+  })
+  .catch((error) => {
     console.error(error);
-});
+  });
