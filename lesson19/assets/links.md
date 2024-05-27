@@ -12,6 +12,8 @@
 
 [Http methods](https://developer.mozilla.org/ru/docs/Web/HTTP/Methods)
 
+[Form data](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
+
 [User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent)
 
 [HTTP overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
