@@ -1,0 +1,32 @@
+{
+  "name": "ikot-gulp",
+  "version": "1.0.0",
+  "description": "Example of gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "private": true,
+  "keywords": [
+    "gulp"
+  ],
+  "author": "ikot",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.24.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-ssi": "^0.1.5",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.77.3"
+  }
+}
