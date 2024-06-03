@@ -1,0 +1,17 @@
+{
+  "name": "ecma",
+  "version": "1.0.0",
+  "description": "ecma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel scripts -d dist"
+  },
+  "author": "iKot",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.6",
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "^7.24.6"
+  }
+}
