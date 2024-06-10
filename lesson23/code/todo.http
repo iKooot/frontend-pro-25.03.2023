@@ -1,0 +1,30 @@
+### Get all to-dos
+GET http://localhost:3000/todos
+Accept: application/json
+
+### Create a new to-do
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "title": "New Todo",
+  "description": "This is a new todo item",
+  "completed": false
+}
+
+### Get a specific to-do by ID
+GET http://localhost:3000/todos/66674476a1f2da74454e2829
+Accept: application/json
+
+### Update a specific to-do by ID
+PUT http://localhost:3000/todos/66674476a1f2da74454e2829
+Content-Type: application/json
+
+{
+  "title": "Updated Todo",
+  "description": "This is an updated todo item",
+  "completed": true
+}
+
+### Delete a specific to-do by ID
+DELETE http://localhost:3000/todos/66674476a1f2da74454e2829
