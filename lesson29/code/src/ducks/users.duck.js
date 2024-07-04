@@ -62,8 +62,6 @@ export const fetchUsers = createAsyncThunk(
 
       const { data } = await resp.json();
 
-      // const { data } = await getUsers(signal);
-
       const preparedData = data.map((el) => ({
         id: el.id,
         name: el.first_name,
