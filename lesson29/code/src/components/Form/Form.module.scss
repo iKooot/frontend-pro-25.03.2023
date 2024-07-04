@@ -1,0 +1,12 @@
+@import "../../services/style/_config.scss";
+
+.input {
+  padding: $sm;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: $m
+}
