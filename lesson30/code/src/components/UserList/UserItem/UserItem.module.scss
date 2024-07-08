@@ -1,0 +1,11 @@
+@import "../../../services/style/_config.scss";
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  gap: $m;
+}
