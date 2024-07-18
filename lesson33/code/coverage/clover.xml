@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1721329524049" clover="3.2.0">
+  <project timestamp="1721329524050" name="All files">
+    <metrics statements="89" coveredstatements="52" conditionals="16" coveredconditionals="7" methods="46" coveredmethods="27" elements="151" coveredelements="86" complexity="0" loc="89" ncloc="89" packages="9" files="21" classes="21"/>
+    <package name="api">
+      <metrics statements="13" coveredstatements="2" conditionals="5" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="httpClient.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/api/httpClient.js">
+        <metrics statements="12" coveredstatements="2" conditionals="5" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="3" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/api/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="users.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/api/users.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Form">
+      <metrics statements="10" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="Form.jsx" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/components/Form/Form.jsx">
+        <metrics statements="10" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="2" falsecount="2"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.SimpleButton">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="SimpleButton.jsx" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/components/SimpleButton/SimpleButton.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.UI">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/components/UI/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.UI.Buttons">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/components/UI/Buttons/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.UI.Buttons.Button">
+      <metrics statements="2" coveredstatements="2" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="Button.jsx" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/components/UI/Buttons/Button/Button.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/components/UI/Buttons/Button/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.UI.Loader">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Loader.jsx" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/components/UI/Loader/Loader.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/components/UI/Loader/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="scripts">
+      <metrics statements="35" coveredstatements="34" conditionals="4" coveredconditionals="4" methods="24" coveredmethods="23"/>
+      <file name="axios.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/scripts/axios.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="counter.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/scripts/counter.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+      </file>
+      <file name="fetch.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/scripts/fetch.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+      </file>
+      <file name="mockFn.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/scripts/mockFn.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+      </file>
+      <file name="mockPartial.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/scripts/mockPartial.js">
+        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="utils.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/scripts/utils.js">
+        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="14"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="store.users">
+      <metrics statements="26" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="0"/>
+      <file name="index.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/store/users/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="users.actions.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/store/users/users.actions.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="users.sagas.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/store/users/users.sagas.js">
+        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+      <file name="users.slice.js" path="/Users/ikot/Documents/hillel/frontend-pro/groups/frontend-pro-25.03.2024/lessons/lesson33/code/src/store/users/users.slice.js">
+        <metrics statements="18" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
