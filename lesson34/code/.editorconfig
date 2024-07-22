@@ -1,0 +1,31 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Default settings for all files
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Additional settings for specific file types
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
+
+[*.json]
+indent_size = 2
+
+[*.yml, *.yaml]
+indent_size = 2
+
+[*.css, *.scss]
+indent_size = 2
+
+[*.html]
+indent_size = 2

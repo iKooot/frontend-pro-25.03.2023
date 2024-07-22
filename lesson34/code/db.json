@@ -1,0 +1,47 @@
+{
+  "destination": [],
+  "hotels": [
+    {
+      "id": "7a75d17aebbd7de8c3d4a76a",
+      "name": "Halvorson - Ernser",
+      "city": "Zaneboro",
+      "phone_number": "942.290.6124 x541",
+      "photo": "https://picsum.photos/seed/eQ5T8ZL4/140/140"
+    },
+    {
+      "id": "ed3a6fdea5ac5dfe2d1bf9ed",
+      "name": "Franecki, Fisher and Denesik",
+      "city": "North Merrittside",
+      "phone_number": "514-687-9137 x7947",
+      "photo": "https://picsum.photos/seed/YPAGfDPM/140/140"
+    },
+    {
+      "id": "caa5e4e3e573b010bbe35ef3",
+      "name": "Davis, Johnson and Hudson",
+      "city": "Hiramchester",
+      "phone_number": "1-314-587-5701 x65784",
+      "photo": "https://picsum.photos/seed/bQVgi584Hl/140/140"
+    },
+    {
+      "id": "d893be6b03aa0b4c72ddecc2",
+      "name": "Roberts - O'Kon",
+      "city": "Lehnerberg",
+      "phone_number": "500-985-2042",
+      "photo": "https://picsum.photos/seed/g6xAnAPiGl/140/140"
+    },
+    {
+      "id": "dcd7cc42a79060c73a3ec1b4",
+      "name": "Collins Inc",
+      "city": "Giovannishire",
+      "phone_number": "1-470-498-3167 x2993",
+      "photo": "https://picsum.photos/seed/BH1Yi/140/140"
+    },
+    {
+      "id": "98f46fa7c4c25dda3aacdb71",
+      "name": "Koelpin, Kautzer and Hessel",
+      "city": "Sylviaport",
+      "phone_number": "226-840-4829 x813",
+      "photo": "https://picsum.photos/seed/A00deCqtj/140/140"
+    }
+  ]
+}
