@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2022" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "module": "commonjs" /* Specify what module code is generated. */,
+    "rootDir": "src" /* Specify the root folder within your source files. */,
+    "sourceMap": true /* Create source map files for emitted JavaScript files. */,
+    "outDir": "dist", /* Specify an output folder for all emitted files. */
+    "removeComments": true /* Disable emitting comments. */,
+    "noEmitOnError": true /* Disable emitting files if any type checking errors are reported. */,
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+    "strict": true /* Enable all strict type-checking options. */,
+    "alwaysStrict": true /* Ensure 'use strict' is always emitted. */,
+    "allowUnreachableCode": false /* Disable error reporting for unreachable code. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "noImplicitAny": true /* Error if type is any */,
+    "strictPropertyInitialization": true /* setting controls whether class fields need to be initialized in the constructor */
+  }
+}
