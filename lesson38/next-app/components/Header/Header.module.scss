@@ -1,0 +1,17 @@
+@import "../../styles/_config";
+
+.link {
+    color: $c-light;
+}
+
+.active {
+    color: $c-link;
+}
+
+.header {
+    background-color: $c-dark;
+    padding: $lg;
+    display: flex;
+    gap: $lg;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+}

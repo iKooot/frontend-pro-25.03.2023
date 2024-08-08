@@ -1,0 +1,126 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./components/Header/Header.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.Header_t-c__SXxmt {
+  text-align: center;
+}
+
+.Header_m-sm__TyNrv {
+  margin: 4px;
+}
+
+.Header_m-s__4ANRx {
+  margin: 8px;
+}
+
+.Header_m-m__31zBh {
+  margin: 12px;
+}
+
+.Header_m-lg__k_ZOg {
+  margin: 16px;
+}
+
+.Header_m-xl__PbeBN {
+  margin: 20px;
+}
+
+.Header_m-xxl__UIFsh {
+  margin: 24px;
+}
+
+.Header_p-m__FlRUP {
+  padding: 12px;
+}
+
+.Header_link__rGoSf {
+  color: white;
+}
+
+.Header_active__Ly_zN {
+  color: #0dcaf0;
+}
+
+.Header_header__1RJ5C {
+  background-color: #333;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./styles/main.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.t-c {
+  text-align: center;
+}
+
+.m-sm {
+  margin: 4px;
+}
+
+.m-s {
+  margin: 8px;
+}
+
+.m-m {
+  margin: 12px;
+}
+
+.m-lg {
+  margin: 16px;
+}
+
+.m-xl {
+  margin: 20px;
+}
+
+.m-xxl {
+  margin: 24px;
+}
+
+.p-m {
+  padding: 12px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+.dark button {
+  background-color: white;
+  color: #333;
+}
+
+.dark button:hover {
+  background-color: #0dcaf0;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: #333;
+}
+
+.light button {
+  background-color: #333;
+  color: white;
+}
+
+.light button:hover {
+  background-color: #0dcaf0;
+  color: white;
+}
